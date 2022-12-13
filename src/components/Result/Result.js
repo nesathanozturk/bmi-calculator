@@ -1,7 +1,7 @@
 function Result() {
   return (
     <div>
-      <p>Result: </p>
+      <p className="text-lg">Result: </p>
     </div>
   );
 }

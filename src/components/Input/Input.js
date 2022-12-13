@@ -1,5 +1,10 @@
 function Input() {
-  return <div>Input</div>;
+  return (
+    <div>
+      <label></label>
+      <input type="text" />
+    </div>
+  );
 }
 
 export default Input;

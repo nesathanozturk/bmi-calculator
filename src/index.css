@@ -10,8 +10,8 @@
     box-sizing: border-box;
   }
   body {
-    background: #ece9e6;
-    background: -webkit-linear-gradient(to left, #ffffff, #ece9e6);
-    background: linear-gradient(to left, #ffffff, #ece9e6);
+    background: #0575e6;
+    background: -webkit-linear-gradient(to right, #021b79, #0575e6);
+    background: linear-gradient(to right, #021b79, #0575e6);
   }
 }

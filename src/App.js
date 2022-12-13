@@ -33,19 +33,19 @@ function App() {
 
   return (
     <div className="App w-full h-screen flex flex-col items-center text-[#1B255A] text-center font-poppins">
-      <div className="container bg-white w-[22rem] h-[35rem] my-24 mx-auto rounded-xl shadow-2xl">
+      <div className="container bg-white w-[22rem] h-[33.2rem] my-24 mx-auto rounded-xl shadow-2xl">
         <h1 className="text-4xl mt-4">BMI Calculator</h1>
+        <div className="result w-52 mt-4 p-2 mx-auto border-2 border-[#3B3486]">
+          <Result bmi={bmi} message={message} />
+        </div>
         <div className="inputs mt-8 mb-2">
           <Input label="Height(cm): " value={height} setValue={setHeight} />
           <Input label="Weight(kg): " value={weight} setValue={setWeight} />
         </div>
-        <div className="button mb-8">
+        <div className="button mb-2">
           <Button calcBmi={calcBmi} />
         </div>
-        <div className="result w-52 p-2 mx-auto border-2 border-[#3B3486]">
-          <Result bmi={bmi} message={message} />
-        </div>
-        <div className="reset-button mt-4">
+        <div className="reset-button">
           <ResetButton />
         </div>
       </div>

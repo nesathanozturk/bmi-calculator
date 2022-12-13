@@ -1,8 +1,13 @@
-function Input() {
+function Input({ label, value, setValue }) {
   return (
     <div>
-      <label></label>
-      <input type="text" />
+      <label>{label}</label>
+      <input
+        type="text"
+        className=""
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+      />
     </div>
   );
 }

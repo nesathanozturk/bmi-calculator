@@ -1,7 +1,11 @@
-function Button() {
+function Button({ calcBmi }) {
   return (
     <div>
-      <button className="bg-[#3B3486] text-white text-md w-44 p-2 rounded-md hover:bg-[#001253]">
+      <button
+        type="submit"
+        className="bg-[#3B3486] text-white text-md w-44 p-2 rounded-md hover:bg-[#001253]"
+        onClick={() => calcBmi()}
+      >
         Calculate
       </button>
     </div>

@@ -9,9 +9,7 @@ function App() {
   const [bmi, setBmi] = useState("");
   const [message, setMessage] = useState("");
 
-  let calcBmi = (e) => {
-    e.preventDefault();
-
+  let calcBmi = () => {
     if (weight === 0 || height === 0) {
       alert("Please type your weight and height");
     } else {
@@ -32,6 +30,8 @@ function App() {
     }
   };
 
+  console.log(calcBmi);
+
   return (
     <div className="App w-full h-screen flex flex-col items-center text-[#1B255A] text-center font-poppins">
       <div className="container bg-white w-[25rem] h-[37.5rem] my-24 mx-auto rounded-xl">
@@ -41,10 +41,10 @@ function App() {
           <Input label="Height(cm): " value={height} setValue={setHeight} />
         </div>
         <div className="button mb-8">
-          <Button handleCalcBmi={calcBmi} />
+          <Button calcBmi={calcBmi} />
         </div>
-        <div className="result w-48 p-2 mx-auto border-2 border-[#3B3486] text-left">
-          <Result />
+        <div className="result w-52 p-2 mx-auto border-2 border-[#3B3486]">
+          <Result bmi={bmi} message={message} />
         </div>
       </div>
     </div>

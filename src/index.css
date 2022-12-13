@@ -3,3 +3,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #ece9e6;
+    background: -webkit-linear-gradient(to left, #ffffff, #ece9e6);
+    background: linear-gradient(to left, #ffffff, #ece9e6);
+  }
+}

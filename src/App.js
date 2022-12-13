@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App w-full h-screen flex flex-col items-center text-[#1B255A] text-center font-poppins">
-      <div className="container bg-white w-[31.25rem] h-[37.5rem] my-24 mx-auto rounded-xl">
+      <div className="container bg-white w-[28rem] h-[37.5rem] my-24 mx-auto rounded-xl">
         <h1 className="text-center text-4xl mt-4 mb-8">BMI Calculator</h1>
         <div className="inputs">
           <Input label="Weight(kg): " value={weight} setValue={setWeight} />

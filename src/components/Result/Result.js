@@ -1,10 +1,10 @@
 function Result({ bmi, message }) {
   return (
     <div>
-      <p className="text-lg">
-        Your body mass index is: <br /> {bmi}
+      <p className="text-lg mt-1">
+        Your BMI is <br /> {bmi}
       </p>
-      <p className="mt-2 text-lg">{message}</p>
+      <p className="text-lg">{message}</p>
     </div>
   );
 }

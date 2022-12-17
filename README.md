@@ -1,5 +1,3 @@
-<img src="/public/image.png">
-
 <h1>About</h1>
 <p>This repository is my React Bmi-Calculator project.<p>
 <p>Pay attention to use dot while writing your height. Otherwise it doesn't work!</p>

@@ -4,11 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
   body {
     background: #0575e6;
     background: -webkit-linear-gradient(to right, #021b79, #0575e6);
